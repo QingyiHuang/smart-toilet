@@ -1,0 +1,150 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body, html{
+  width: 100%;
+  height: 100%;
+}
+.GuidePage {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  user-select: none;
+  background-color: rgb(6, 21, 44);
+}
+.GuidePage::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../img/guide/img-moxingbeijing.png') no-repeat;
+  background-size: 100% 100%;
+}
+@font-face{
+  font-family: 'YouSheBiaoTiHei';
+  src: url('YouSheBiaoTiHei.ttf') format('truetype');
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+/* *********头部标题部分********* */
+.headerPart {
+  height: 80px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url('../img/guide/pnl-toububiaoti.png') no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+  line-height: 70px;
+  z-index: 300;
+  opacity: 0.9;
+  font-family: YouSheBiaoTiHei;
+  font-size: 56px;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(44, 154, 232, 0.5);
+}
+.footerpart{
+  height: 21px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: url('../img/guide/pnl-dibuzhuangshi.png') no-repeat;
+  background-size: 100% 100%;
+  line-height: 56px;
+  z-index: 2;
+}
+.footerpart .footerP{
+  position: absolute;
+  width: 880px;
+  left: 50%;
+  margin-left: -440px;
+  top: -36px;
+  font-family: MicrosoftYaHei;
+  font-size: 24px;
+  color: rgba(239, 223, 81, 0.84);
+  font-weight: 400;
+}
+
+.leftPanel{
+  width: 543px;
+  height: calc(100% - 193px);
+  background: url('../img/guide/pnl-zuoshujuban.png')
+    no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  left: 0;
+  top: 32px;
+}
+.rightPanel{
+  width: 543px;
+  height: calc(100% - 193px);
+  background: url('../img/guide/pnl-youshujuban.png')
+    no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  right: 0;
+  top: 32px;
+}
+.tipstop{
+  position: absolute;
+  color: rgb(140, 201, 232);
+  width: 137px;
+  right: 530px;
+  bottom: 270px;
+}
+.tipstop1{
+  width: 40%;
+  position: relative;
+  float: left;
+  height: 24px;
+  background: linear-gradient(to bottom, rgba(40, 56, 159, 0.2), rgba(114, 145, 212, 0.2));
+  padding-left: 10px;
+}
+.tipstop2{
+  width: 40%;
+  position: relative;
+  float: right;
+  width: 56px;
+  height: 24px;
+  background: linear-gradient(to bottom, rgba(228, 93, 255, 0.2), rgba(241,222,252, 0.2));
+  padding-left: 10px;
+}
+.tipstop1::before{
+  content: '';
+  position: absolute;
+  left: -3px;
+  top: 0px;
+  width: 4px;
+  height: 24px;
+  background: rgb(40, 56, 159);
+}
+.tipstop2::before{
+  content: '';
+  position: absolute;
+  left: -3px;
+  top: 0px;
+  width: 4px;
+  height: 24px;
+  background: rgb(228, 93, 255);
+}
+.timePart{
+  position: absolute;
+  left: 30px;
+  top: 10px;
+  color: rgb(157, 223, 248);
+  z-index: 301;
+  font-family: MicrosoftYaHeiUI;
+  font-size: 18px;
+  color: #9EE0FF;
+  letter-spacing: 0;
+  font-weight: bold;
+}

@@ -1,0 +1,357 @@
+@font-face{
+  font-family: 'DSDIGI';
+  src: url('DS-DIGI-1.ttf') format('truetype');
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+.malePart {
+  height: 100%;
+  width: 100%;
+  padding: 47px 0 0 47px;
+}
+.toiletInfo {
+  height: 206px;
+  width: 360px;
+  position: relative;
+}
+.titleInfo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 360px;
+  height: 132px;
+}
+.titleInfoMan{
+  background: url('../img/guide/pnl-nancesuo.png')
+    no-repeat;
+  background-size: 100% 100%;
+}
+.titleInfoMan::before{
+  content: '';
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background: url('../img/guide/icon-nance.png')
+    no-repeat;
+  background-size: 100% 100%;
+  top: 0px;
+  left: 50%;
+  margin-left: -60px;
+}
+.titleInfoMan::after{
+  content: '男厕';
+  letter-spacing: 70px;
+  position: absolute;
+  font-size: 40px;
+  color: #5ed6ff;
+  text-align: center;
+  width: 100%;
+  top: 28px;
+  left: 39px;
+  /* margin-left: -60px; */
+}
+.titleInfoNv{
+  background: url('../img/guide/pnl-nvcesuo.png')
+    no-repeat;
+  background-size: 100% 100%;
+}
+.titleInfoNv::before{
+  content: '';
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background: url('../img/guide/icon-nvce.png')
+    no-repeat;
+  background-size: 100% 100%;
+  top: 0px;
+  left: 50%;
+  margin-left: -60px;
+}
+.titleInfoNv::after{
+  content: '女厕';
+  letter-spacing: 70px;
+  position: absolute;
+  font-size: 40px;
+  color: #fe60a3;
+  text-align: center;
+  width: 100%;
+  top: 28px;
+  left: 39px;
+  /* margin-left: -60px; */
+}
+.toiletInfoRight {
+  position: absolute;
+  top: 112px;
+  left: 62px;
+  width: 254px;
+  height: 182px;
+  background: url('../img/guide/pnl-shiyongliang.png') no-repeat;
+  background-size: 100% 100%;
+  background-position: 0 -38px;
+  line-height: 25px;
+  padding-right: 10px;
+}
+.toiletInfoRight p{
+  font-family: DSDIGI;
+  font-size: 80px;
+  color: #5ED6FF;
+  line-height: 104px;
+  text-align: center;
+  letter-spacing: 1;
+}
+.toiletInfoRight p span{
+  font-size: 40px;
+  color: #9EE0FF;
+  position: relative;
+  margin-left: -14px;
+}
+.oneBox {
+  position: relative;
+  height: 135px;
+  width: 360px;
+  margin-bottom: 26px;
+}
+.toiletInfoRightMan::before{
+  content: '空闲';
+  position: absolute;
+  left: -34px;
+  top: 68px;
+  font-family: MicrosoftYaHei;
+  font-size: 14px;
+  color: #9EE0FF;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+.toiletInfoRightMan::after{
+  content: '总数';
+  position: absolute;
+  right: -13px;
+  top: 68px;
+  font-family: MicrosoftYaHei;
+  font-size: 14px;
+  color: #9EE0FF;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+.boxTitle {
+  height: 35px;
+  width: 200px;
+  left: 0;
+  top: 0;
+  background: url('../img/guide/pnl-yijibiaoti1.png') no-repeat;
+  background-size: cover;
+  font-family: MicrosoftYaHei;
+  font-size: 18px;
+  color: #effeff;
+  letter-spacing: 0;
+  line-height: 36px;
+  text-indent: 30px;
+  margin-bottom: 14px;
+}
+.boxContent {
+  height: 72px;
+  position: relative;
+  padding-top: 16px;
+}
+.contentLeft {
+  position: absolute;
+  left: 0;
+  top: 18px;
+  height: 72px;
+  width: 72px;
+  height: 72px;
+  background: url('../img/guide/keliuliang.png') no-repeat;
+  background-size: 100% 100%;
+}
+.contentRihgt {
+  margin-left: 78px;
+  margin-right: 20px;
+  height: 78px;
+  width: 283px;
+  /* display: grid;
+  grid-template-columns: 55% 45%; */
+  position: relative;
+  overflow: hidden;
+}
+.contentRihgt::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url('../img/guide/pnl-keliuliang.png') no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 34px;
+}
+.contentRihgt::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 39px;
+  background: url('../img/guide/pnl-keliuliang.png') no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 34px;
+}
+.part1 {
+  font-family: MicrosoftYaHei;
+  font-size: 14px;
+  color: #9ee0ff;
+  letter-spacing: 0;
+  float:left;
+  width: 45%;
+}
+.part1 p{
+    font-family: MicrosoftYaHei;
+    font-size: 16px;
+    color: #9ee0ff;
+    letter-spacing: 0;
+    line-height: 37px;
+    text-indent: 10px;
+}
+.part2 {
+  font-family: MicrosoftYaHei-Bold;
+  font-size: 32px;
+  color: #ffffff;
+  letter-spacing: 0;
+  float: left;
+  width: 55%;
+}
+.part2 p{
+  font-family: DSDIGI;
+  font-size: 32px;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: 32px;
+  text-indent: 10px;
+  font-weight: 550;
+  /* font-weight: bold; */
+  position: relative;
+  top: 2px;
+}
+.part2 p i{
+  font-style: normal;
+  font-size: 12px;
+  color: #46a0dc;
+  margin-left: 3px;
+  position: relative;
+  top: -4px;
+}
+.oneCol {
+  width: 50%;
+  float: left;
+  height: 57px;
+  position: relative;
+  margin-bottom: 14px;
+  overflow: hidden;
+}
+.colLeft {
+  width: 57px;
+  height: 57px;
+  position: absolute;
+  left: 0;
+}
+.colImg1 {
+  background: url('../img/guide/wendu.png') no-repeat;
+  background-size: 100% 100%;
+}
+.colImg2 {
+  background: url('../img/guide/shidu.png') no-repeat;
+  background-size: 100% 100%;
+}
+.colImg3 {
+  background: url('../img/guide/nh3.png') no-repeat;
+  background-size: 100% 100%;
+}
+.colImg4 {
+  background: url('../img/guide/hs.png') no-repeat;
+  background-size: 100% 100%;
+}
+.colImg5 {
+  background: url('../img/guide/pm2.5.png') no-repeat;
+  background-size: 100% 100%;
+}
+.colRight {
+  margin-left: 62px;
+}
+.colRight-p {
+  font-family: MicrosoftYaHei-Bold;
+  font-size: 20px;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+.colRight-p span{
+  font-family: MicrosoftYaHei;
+  font-size: 12px;
+  color: #9ee0ff;
+  letter-spacing: 0;
+}
+.colRight-name {
+  font-family: MicrosoftYaHei;
+  font-size: 14px;
+  color: #9ee0ff;
+  letter-spacing: 0;
+}
+.malePart1080 .toiletInfo{
+  margin-bottom: 20px;
+}
+.malePart1080 .oneBox{
+  margin-bottom: 46px;
+}
+@keyframes turn1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes turn2 {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.malePart1080 .toiletInfo{
+  margin-bottom: 20px;
+}
+.malePart1080 .oneBox {
+  margin-bottom: 34px;
+}
+.malePart900 {
+  width: 277px;
+}
+.malePartCenter900{
+  top: 106px;
+}
+.footerpart900{
+  bottom: 38px;
+}
+.videoArea{
+  width: 413px;
+  height: 258px;
+  margin-top: 170px;
+  background: url('../img/guide/pnl-video.png') no-repeat;
+  background-size: 100% 100%;
+  padding: 4px;
+  position: relative;
+  top: -29px;
+  left: 0px;
+}
+
+#audio {
+  width: 100%;
+  height: 100%;
+}
+.VideoImg{
+  width: 100%;
+  height: 100%;
+}
+.VideoImg img{
+  width: 100%;
+  height: 100%;
+}

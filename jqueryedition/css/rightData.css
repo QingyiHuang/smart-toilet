@@ -1,0 +1,527 @@
+@font-face{
+  font-family: 'DSDIGI';
+  src: url('DS-DIGI-1.ttf') format('truetype');
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+.femalePart {
+  height: 100%;
+  width: 100%;
+  padding: 47px 0 0 140px;
+}
+.femalePart .toiletInfo {
+  height: 206px;
+  width: 360px;
+  position: relative;
+}
+.femalePart .titleInfo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 360px;
+  height: 132px;
+}
+.titleInfowoman{
+  background: url('../img/guide/pnl-nvcesuo.png')
+    no-repeat;
+  background-size: 100% 100%;
+}
+.titleInfowoman::before{
+  content: '';
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background: url('../img/guide/icon-nvce.png')
+    no-repeat;
+  background-size: 100% 100%;
+  top: 0px;
+  left: 50%;
+  margin-left: -60px;
+}
+.titleInfowoman::after{
+  content: '女厕';
+  letter-spacing: 70px;
+  position: absolute;
+  font-size: 40px;
+  color: #fe60a3;
+  text-align: center;
+  width: 100%;
+  top: 28px;
+  left: 39px;
+  /* margin-left: -60px; */
+}
+.titleInfoman{
+  background: url('../img/guide/pnl-nancesuo.png')
+    no-repeat;
+  background-size: 100% 100%;
+}
+.titleInfoman::before{
+  content: '';
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background: url('../img/guide/icon-nance.png')
+    no-repeat;
+  background-size: 100% 100%;
+  top: 0px;
+  left: 50%;
+  margin-left: -60px;
+}
+.titleInfoman::after{
+  content: '男厕';
+  letter-spacing: 70px;
+  position: absolute;
+  font-size: 40px;
+  color: #5ed6ff;
+  text-align: center;
+  width: 100%;
+  top: 28px;
+  left: 39px;
+  /* margin-left: -60px; */
+}
+.femalePart .toiletInfoRight {
+  position: absolute;
+  top: 112px;
+  left: 62px;
+  width: 254px;
+  height: 182px;
+  background: url('../img/guide/pnl-shiyongliang.png') no-repeat;
+  background-size: 100% 100%;
+  background-position: 0 -38px;
+  line-height: 25px;
+  padding-right: 10px;
+}
+.femalePart .toiletInfoRight p {
+  font-family: DSDIGI;
+  font-size: 80px;
+  color: #FE60A3;
+  line-height: 104px;
+  text-align: center;
+  letter-spacing: 1;
+}
+.femalePart .toiletInfoRight p span{
+  font-size: 40px;
+  color: #9EE0FF;
+  position: relative;
+  margin-left: -14px;
+}
+.femalePart .toiletInfoRight::before{
+  content: '空闲';
+  position: absolute;
+  left: -34px;
+  top: 68px;
+  font-family: MicrosoftYaHei;
+  font-size: 14px;
+  color: #9EE0FF;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+.femalePart .toiletInfoRight::after{
+  content: '总数';
+  position: absolute;
+  right: -13px;
+  top: 68px;
+  font-family: MicrosoftYaHei;
+  font-size: 14px;
+  color: #9EE0FF;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+.femalePart .oneBox {
+  position: relative;
+  height: 135px;
+  width: 360px;
+  margin-bottom: 26px;
+}
+.femalePart .boxTitle {
+  height: 35px;
+  width: 200px;
+  position: relative;
+  left: 160px;
+  top: 0;
+  background: url('../img/guide/pnl-yijibiaoti2.png') no-repeat;
+  background-size: 100% 100%;
+  font-family: MicrosoftYaHei;
+  font-size: 18px;
+  color: #effeff;
+  letter-spacing: 0;
+  line-height: 35px;
+  padding-right: 36px;
+  text-align: right;
+  margin-bottom: 14px;
+}
+.femalePart .boxContent {
+  height: 72px;
+  position: relative;
+  padding-top: 16px;
+}
+.femalePart .contentLeft {
+  position: absolute;
+  left: 0;
+  top: 18;
+  height: 72px;
+  width: 72px;
+  height: 72px;
+  background: url('../img/guide/keliuliang.png') no-repeat;
+  background-size: 100% 100%;
+}
+.femalePart .contentRihgt {
+  margin-left: 78px;
+  margin-right: 20px;
+  height: 72px;
+  width: 283px;
+  position: relative;
+  overflow: hidden;
+}
+.femalePart .contentRihgt::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url('../img/guide/pnl-keliuliang.png') no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 34px;
+}
+.femalePart .contentRihgt::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 39px;
+  background: url('../img/guide/pnl-keliuliang.png') no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 34px;
+}
+.femalePart .contentRihgt .part1 {
+  font-family: MicrosoftYaHei;
+  font-size: 14px;
+  color: #9ee0ff;
+  letter-spacing: 0;
+  float:left;
+  width: 45%;
+}
+.femalePart .contentRihgt .part1 p {
+  font-family: MicrosoftYaHei;
+  font-size: 16px;
+  color: #9ee0ff;
+  letter-spacing: 0;
+  line-height: 37px;
+  text-indent: 10px;
+}
+.femalePart .contentRihgt .part2 {
+  font-family: MicrosoftYaHei-Bold;
+  font-size: 32px;
+  color: #ffffff;
+  letter-spacing: 0;
+  float: left;
+  width: 55%;
+}
+.femalePart .contentRihgt .part2 p {
+  font-family: DSDIGI;
+  font-size: 32px;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: 32px;
+  text-indent: 10px;
+  font-weight: 550;
+  /* font-weight: bold; */
+  position: relative;
+  top: 2px;
+}
+.femalePart .contentRihgt .part2 p i {
+  font-style: normal;
+  font-size: 12px;
+  color: #46a0dc;
+  margin-left: 3px;
+  position: relative;
+  top: -4px;
+}
+.femalePart .oneCol {
+  width: 50%;
+  display: inline-block;
+  height: 57px;
+  position: relative;
+  margin-bottom: 14px;
+  overflow: hidden;
+}
+.colLeft {
+  width: 57px;
+  height: 57px;
+  position: absolute;
+  left: 0;
+}
+.colImg1 {
+  background: url('../img/guide/wendu.png') no-repeat;
+  background-size: 100% 100%;
+}
+.colImg2 {
+  background: url('../img/guide/shidu.png') no-repeat;
+  background-size: 100% 100%;
+}
+.colImg3 {
+  background: url('../img/guide/nh3.png') no-repeat;
+  background-size: 100% 100%;
+}
+.colImg4 {
+  background: url('../img/guide/hs.png') no-repeat;
+  background-size: 100% 100%;
+}
+.colImg5 {
+  background: url('../img/guide/pm2.5.png') no-repeat;
+  background-size: 100% 100%;
+}
+.colRight {
+  margin-left: 62px;
+}
+.colRight-p {
+  font-family: MicrosoftYaHei-Bold;
+  font-size: 20px;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: 24px;
+
+}
+.colRight-p span {
+  font-family: MicrosoftYaHei;
+  font-size: 12px;
+  color: #9ee0ff;
+  letter-spacing: 0;
+}
+.colRight-name {
+  font-family: MicrosoftYaHei;
+  font-size: 14px;
+  color: #9ee0ff;
+  letter-spacing: 0;
+}
+@keyframes turn1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes turn2 {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.malePart1080 .toiletInfo {
+  margin-bottom: 54px;
+}
+.malePart1080 .oneBox {
+  margin-bottom: 46px;
+}
+.oneBoxSpecial{
+  position: absolute;
+  top: -661px;
+  left: 50%;
+  margin-left: -260px;
+  width: 520px;
+  height: 16px;
+  background: url('../img/guide/pnl-zongshu.png') no-repeat;
+  background-size: 100% 100%;
+}
+.specialOneLine{
+  width: 260px;
+  height: 38px;
+  margin-right: 0px;
+  float: left;
+  position: relative;
+  top: -17px;
+}
+.specialOneLine p{
+  font-family: MicrosoftYaHei;
+  font-size: 14px;
+  color: #9ee0ff;
+  letter-spacing: 0;
+  line-height: 38px;
+  text-indent: 10px;
+}
+.specialOneLine .p1{
+  float:left;
+  width: 40%;
+}
+.specialOneLine .p2{
+  float: left;
+  width: 60%;
+  font-family: DSDIGI;
+  font-size: 36px;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: 28px;
+}
+.specialOneLine p i{
+  font-style: normal;
+  font-size: 12px;
+  color: #46a0dc;
+}
+.thirdPart .oneBoxSpecial > .titleInfo{
+  position: absolute;
+  left: 0;
+  top: -46px;
+  line-height: 32px;
+  height: 32px;
+  width: 186px;
+  background: url('../img/guide/pnl-xiaobiaoti.png') no-repeat;
+  background-size: 100% 100%;
+  font-family: PingFangSC-Semibold;
+  font-size: 16px;
+  color: #effeff;
+  letter-spacing: 0;
+  text-indent: 35px;
+} 
+@font-face{
+  font-family: 'DSDIGI';
+  src: url('DS-DIGI-1.ttf') format('truetype');
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+.evaluateArea{
+  width: 360px;
+  height: 175px;
+  margin-top: 140px;
+  position: relative;
+}
+.evaLeft{
+  height: 172px;
+  width: 194px;
+  background: url('../img/guide/pnl-zonghepingfen.png') no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 18px 22px;
+}
+.evaTitle{
+  font-family: PingFangSC-Semibold;
+  font-size: 16px;
+  color: #EFFEFF;
+  letter-spacing: 0;
+  font-weight: 600;
+  position: relative;
+  padding-left: 35px;
+  line-height: 30px;
+}
+.evaTitle::before{
+  content: '';
+  width: 32px;
+  height: 32px;
+  background: url('../img/guide/ico-zonghepingfen.png') no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.starBar{
+  overflow: hidden;
+  margin-top: 22px;
+}
+.evaLeft .star{
+  width: 26px;
+  height: 26px;
+  background: url('../img/guide/ico-xingbeijing.png') no-repeat;
+  background-size: 100% 100%;
+  float: left;
+  margin-left: 3px;
+}
+.evaLeft .starLight{
+  background: url('../img/guide/ico-xing.png') no-repeat;
+  background-size: 100% 100%;
+}
+.evaLeft .starHarf{
+  background: url('../img/guide/ico-xingban.png') no-repeat;
+  background-size: 100% 100%;
+}
+.evaValue{
+  margin-top: 20px;
+  font-family: MicrosoftYaHei;
+  font-size: 14px;
+  color: #9EE0FF;
+  letter-spacing: 0;
+  text-align: center;
+  font-weight: 400;
+}
+.evaRight{
+  height: 172px;
+  width: 142px;
+  background: url('../img/guide/pnl-erweima.png') no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+#qrCodeArea{
+  width: 132px;
+  height: 133px;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+}
+.evaRight p{
+  font-family: MicrosoftYaHei;
+  font-size: 14px;
+  color: #9EE0FF;
+  letter-spacing: 0;
+  text-align: center;
+  font-weight: 400;
+  width: 100%;
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+}
+.weatherPart{
+  position: absolute;
+  right: 0px;
+  top: 10px;
+  z-index: 301;
+  width: 405px;
+  height: 23px;
+  font-family: MicrosoftYaHeiUI;
+  font-size: 18px;
+  color: #9EE0FF;
+  letter-spacing: 0;
+  line-height: 20px;
+  font-weight: bold;
+}
+.weather1{
+  float: left;
+  width: 48px;
+  height: 33px;
+  margin-right: 6px;
+  position: relative;
+  top: -5px;
+}
+.weathersun{
+  background: url('../img/qingtian.png') no-repeat;
+  background-size: 100% 100%;
+}
+.weatherrain{
+  background: url('../img/xiayu.png') no-repeat;
+  background-size: 100% 100%;
+}
+.weatheryun{
+  background: url('../img/duoyun.png') no-repeat;
+  background-size: 100% 100%;
+}
+.weatherxue{
+  background: url('../img/xiaxue.png') no-repeat;
+  background-size: 100% 100%;
+}
+.weatherdefault{
+  background: url('../img/qingtian2.png') no-repeat;
+  background-size: 100% 100%;
+}
+.weather2{
+  float: left;
+  margin-right: 15px;
+}
+.weather3{
+  float: left;
+}

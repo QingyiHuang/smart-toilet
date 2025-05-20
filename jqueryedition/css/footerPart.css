@@ -1,0 +1,197 @@
+.thirdPart {
+  width: 1700px;
+  height: 130px;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  margin-left: -850px;
+  /* display: grid;
+  grid-template-columns: 19% 62% 19%; */
+  /* overflow: hidden; */
+  z-index: 200;
+
+}
+.thirdPart .leftPart {
+  position: relative;
+  float: left;
+  width: 20%;
+  overflow: hidden;
+  height: 100%;
+}
+.thirdPart .centerpart {
+  position: relative;
+  float: left;
+  width: 60%;
+  /* overflow: hidden; */
+  height: 100%;
+}
+.thirdPart .rightpart {
+  position: relative;
+  float: left;
+  width: 20%;
+  overflow: hidden;
+  height: 100%;
+}
+
+.thirdPart .toiletBoss {
+  height: 130px;
+  width: 282px;
+  position: absolute;
+  left: 0px;
+  top: 0;
+}
+.thirdPart .titleInfo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  line-height: 32px;
+  height: 32px;
+  width: 186px;
+  background: url('../img/guide/pnl-xiaobiaoti.png') no-repeat;
+  background-size: 100% 100%;
+  font-family: PingFangSC-Semibold;
+  font-size: 16px;
+  color: #effeff;
+  letter-spacing: 0;
+  text-indent: 35px;
+}
+.thirdPart .bossBottom1 {
+  height: 84px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: url('../img/guide/card-huanwei.png')
+    no-repeat;
+  background-size: 100%;
+}
+.thirdPart .bossBottom1 .bossLeft {
+  height: 100%;
+  width: 84px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.thirdPart .bossBottom1 .bossRight {
+  margin-left: 84px;
+  padding-left: 10px;
+}
+.thirdPart .bossBottom1 .bossRight p {
+  font-size: 14px;
+  color: #9ee0ff;
+  letter-spacing: 0;
+  line-height: 26px;
+}
+.thirdPart .bossBottom1 .bossRight p span {
+  font-size: 14px;
+  color: #4fb1c8;
+  letter-spacing: 0;
+}
+.thirdPart .bossBottom1 .bossRight div {
+  font-family: MicrosoftYaHei;
+  font-size: 14px;
+  color: #9ee0ff;
+  letter-spacing: 0;
+  word-break: break-all;
+  padding-top: 12px;
+}
+.thirdPart .toiletBosscenter {
+  height: 164px;
+  width: 904px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  margin-left: -452px;
+}
+.thirdPart .titleInfo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  line-height: 32px;
+  height: 32px;
+  width: 186px;
+  background: url('../img/guide/pnl-xiaobiaoti.png') no-repeat;
+  background-size: 100% 100%;
+  font-family: PingFangSC-Semibold;
+  font-size: 16px;
+  color: #effeff;
+  letter-spacing: 0;
+  text-indent: 35px;
+}
+.thirdPart .bossBottom {
+  height: 104px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: url('../img/guide/pnl-disanwei.png') no-repeat;
+  background-size: 100% 100%;
+  overflow: hidden;
+  padding-top: 20.5px;
+}
+.thirdPart .oneCol {
+  width: 100%;
+  height: 57px;
+  position: relative;
+  margin-bottom: 14px;
+  overflow: hidden;
+  float: left;
+  width: 20%;
+  padding-left: 30px;
+}
+.thirdPart .colLeft {
+  width: 57px;
+  height: 57px;
+  position: absolute;
+  left: 22px;
+}
+.thirdPart .colImg1 {
+  background: url('../img/guide/wendu.png')
+    no-repeat;
+  background-size: 100% 100%;
+}
+.thirdPart .colImg2 {
+  background: url('../img/guide/shidu.png')
+    no-repeat;
+  background-size: 100% 100%;
+}
+.thirdPart .colImg3 {
+  background: url('../img/guide/nh3.png')
+    no-repeat;
+  background-size: 100% 100%;
+}
+.thirdPart .colImg4 {
+  background: url('../img/guide/hs.png')
+    no-repeat;
+  background-size: 100% 100%;
+}
+.thirdPart .colImg5 {
+  background: url('../img/guide/pm2.5.png')
+    no-repeat;
+  background-size: 100% 100%;
+}
+.thirdPart .colRight {
+  margin-left: 50px;
+}
+.thirdPart .colRight .colRight-p {
+  font-family: MicrosoftYaHei-Bold;
+  font-size: 20px;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+.thirdPart .colRight .colRight-p span {
+  font-family: MicrosoftYaHei;
+  font-size: 12px;
+  color: #9ee0ff;
+  letter-spacing: 0;
+}
+.thirdPart .colRight .colRight-name {
+  font-family: MicrosoftYaHei;
+  font-size: 14px;
+  color: #9ee0ff;
+  letter-spacing: 0;
+}
+.footerpart1080 {
+  bottom: 150px;
+}

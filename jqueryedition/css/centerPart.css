@@ -1,0 +1,136 @@
+.guideBackGround {
+  height: 496px;
+  width: 856px;
+  position: absolute;
+  top: 250px;
+  left: 50%;
+  margin-left: -428px;
+  overflow: hidden;
+}
+.imgback {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 99;
+}
+.backInfo{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+/* rgba(0, 255, 137, 0.24)
+rgba(226, 121, 13,0.24) */
+.maleMarker {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  background: linear-gradient(to bottom, rgba(228, 93, 255, 0.61), rgba(241,222,252, 0.61))
+}
+.maleMarker::before{
+  /* content: '';
+  width: 9.6px;
+  height: 24px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -4.8px;
+  margin-top: -12px;
+  background: url('../img/guide/nance-zaiyong.png') no-repeat;
+  background-size: 100% 100%; */
+}
+.maleMarkerActive {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  background-color: rgba(0, 102, 255, 0.24);
+  background: linear-gradient(to bottom, rgba(40, 56, 159, 0.61), rgba(114, 145, 212, 0.61))
+}
+.maleMarkerActive::before {
+  /* content: '';
+  width: 9.6px;
+  height: 24px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -4.8px;
+  margin-top: -12px;
+  background: url('../img/guide/nance-kongxian.png') no-repeat;
+  background-size: 100% 100%; */
+}
+.femaleMarker {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  background: linear-gradient(to bottom, rgba(228, 93, 255, 0.61), rgba(241,222,252, 0.61))
+}
+.femaleMarker::before{
+  /* content: '';
+  width: 9.6px;
+  height: 24px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -4.8px;
+  margin-top: -12px;
+  background: url('../img/guide/nvce-zaiyong.png') no-repeat;
+  background-size: 100% 100%; */
+}
+.femaleMarkerActive {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  background: linear-gradient(to bottom, rgba(40, 56, 159, 0.61), rgba(114, 145, 212, 0.61))
+}
+.femaleMarkerActive::before{
+  /* content: '';
+  width: 9.6px;
+  height: 24px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -4.8px;
+  margin-top: -12px;
+  background: url('../img/guide/nvce-kongxian.png') no-repeat;
+  background-size: 100% 100%; */
+}
+.thirdMarker {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  background: linear-gradient(to bottom, rgba(228, 93, 255, 0.61), rgba(241,222,252, 0.61))
+}
+.thirdMarker::before {
+  /* content: '';
+  width: 9.6px;
+  height: 24px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -4.8px;
+  margin-top: -12px;
+  background: url('../img/guide/wuzhangaizaiyong.png') no-repeat;
+  background-size: 100% 100%; */
+}
+.thirdMarkerActive {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  background: linear-gradient(to bottom, rgba(40, 56, 159, 0.61), rgba(114, 145, 212, 0.61))
+}
+.thirdMarkerActive::before{
+  /* content: '';
+  width: 9.6px;
+  height: 24px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -4.8px;
+  margin-top: -12px;
+  background: url('../img/guide/wuzhangaikongxian.png') no-repeat;
+  background-size: 100% 100%; */
+}

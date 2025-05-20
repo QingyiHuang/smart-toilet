@@ -1,0 +1,27 @@
+{
+    "h5packCode": "hello",
+    "versionName": "1.0.0",
+    "author": "leipengfei6<leipengfei6.hikvision.com.cn>",
+    "description": "A hatom project",
+    "updateTime": "2021/03/25 20:16:15",
+    "androidMinNativeVersion":"1.0.0",
+    "iOSMinNativeVersion":"1.0.0",
+    "url": "",
+    "componentId": [
+        "componentId1",
+        "componentId2"
+    ],
+    "menuList": [
+        {
+            "menuCode": "scpmbps",
+            "menuName": {
+                "zh": "主页",
+                "en": "portal"
+            },
+            "menuIcon": "/icon.png",
+            "menuPath": "/index.html"
+        }
+    ],
+    "ext": {}
+}
+

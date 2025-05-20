@@ -1,0 +1,106 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.hikvision.pbg.icm.ptsa</groupId>
+		<artifactId>ptsa</artifactId>
+		<version>1.0.0003.RELEASE</version>
+	</parent>
+
+	<artifactId>view</artifactId>
+
+	<packaging>jar</packaging>
+	<description>前端资源目录</description>
+
+	<!-- 这里必须配置，不然生成的项目的配置文件会有编码问题 -->
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-freemarker</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+		</dependency>
+	</dependencies>
+	<build>
+		<plugins>
+			<!-- 编译前段工程view，输出成果物 -->
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>exec-yarn-install</id>
+						<phase>generate-sources</phase>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>yarn</executable>
+							<arguments>
+								<argument>install</argument>
+							</arguments>
+							<workingDirectory>../view</workingDirectory>
+						</configuration>
+					</execution>
+					<execution>
+						<id>exec-yarn-run-build</id>
+						<phase>generate-sources</phase>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>yarn</executable>
+							<arguments>
+								<argument>run</argument>
+								<argument>build</argument>
+							</arguments>
+							<workingDirectory>../view</workingDirectory>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<!-- 拷贝前段成果物到resource/static目录下，不包括index.html -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-antrun-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>copy-dist-to-static</id>
+						<phase>process-sources</phase>
+						<configuration>
+							<target>
+								<delete dir="${basedir}/target/classes/static" />
+								<delete dir="${basedir}/target/classes/templates" />
+								<mkdir dir="${basedir}/target/classes/static" />
+								<mkdir dir="${basedir}/target/classes/templates" />
+								<copy todir="${basedir}/target/classes/templates"
+									overwrite="true">
+									<fileset dir="${basedir}/dist" includes="index.ftlh" />
+								</copy>
+								<copy todir="${basedir}/target/classes/static"
+									overwrite="true">
+									<fileset dir="${basedir}/dist" excludes="index.ftlh" />
+								</copy>
+							</target>
+						</configuration>
+						<goals>
+							<goal>run</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+</project>

@@ -1,0 +1,1220 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body, html{
+  width: 100%;
+  height: 100%;
+}
+.GuidePage {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  user-select: none;
+  background-color: rgb(6, 21, 44);
+}
+.GuidePage::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../../assets/images/guide/img-moxingbeijing.png') no-repeat;
+  background-size: 100% 100%;
+}
+@font-face{
+  font-family: 'YouSheBiaoTiHei';
+  src: url('YouSheBiaoTiHei.ttf') format('truetype');
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+/* *********头部标题部分********* */
+.headerPart {
+  height: 80px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url('../../assets/images/guide/pnl-toubu.png') no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+  line-height: 70px;
+  z-index: 300;
+  opacity: 0.9;
+  font-family: YouSheBiaoTiHei;
+  font-size: 56px;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(44, 154, 232, 0.5);
+}
+.footerpart{
+  height: 21px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: url('../../assets/images/guide/pnl-dibuzhuangshi.png') no-repeat;
+  background-size: 100% 100%;
+  line-height: 56px;
+  z-index: 2;
+}
+.footerpart .footerP{
+  position: absolute;
+  width: 880px;
+  left: 50%;
+  margin-left: -440px;
+  top: -36px;
+  font-family: MicrosoftYaHei;
+  font-size: 24px;
+  color: rgba(239, 223, 81, 0.84);
+  font-weight: 400;
+}
+
+.leftPanel{
+  width: 543px;
+  height: calc(100% - 193px);
+  background: url('../../assets/images/guide/pnl-zuoshujuban.png')
+    no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  left: 0;
+  top: 32px;
+}
+.rightPanel{
+  width: 543px;
+  height: calc(100% - 193px);
+  background: url('../../assets/images/guide/pnl-youshujuban.png')
+    no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  right: 0;
+  top: 32px;
+}
+.tipstop{
+  position: absolute;
+  color: rgb(140, 201, 232);
+  width: 137px;
+  right: 530px;
+  bottom: 270px;
+}
+.tipstop1{
+  width: 40%;
+  position: relative;
+  float: left;
+  height: 24px;
+  background: linear-gradient(to bottom, rgba(40, 56, 159, 0.2), rgba(114, 145, 212, 0.2));
+  padding-left: 10px;
+}
+.tipstop2{
+  width: 40%;
+  position: relative;
+  float: right;
+  width: 56px;
+  height: 24px;
+  background: linear-gradient(to bottom, rgba(228, 93, 255, 0.2), rgba(241,222,252, 0.2));
+  padding-left: 10px;
+}
+.tipstop1::before{
+  content: '';
+  position: absolute;
+  left: -3px;
+  top: 0px;
+  width: 4px;
+  height: 24px;
+  background: rgb(40, 56, 159);
+}
+.tipstop2::before{
+  content: '';
+  position: absolute;
+  left: -3px;
+  top: 0px;
+  width: 4px;
+  height: 24px;
+  background: rgb(228, 93, 255);
+}
+.timePart{
+  position: absolute;
+  left: 30px;
+  top: 10px;
+  color: rgb(157, 223, 248);
+  z-index: 301;
+  font-family: MicrosoftYaHeiUI;
+  font-size: 18px;
+  color: #9EE0FF;
+  letter-spacing: 0;
+  font-weight: bold;
+}
+@font-face{
+  font-family: 'DSDIGI';
+  src: url('DS-DIGI-1.ttf') format('truetype');
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+.malePart {
+  height: 100%;
+  width: 100%;
+  padding: 47px 0 0 47px;
+}
+.toiletInfo {
+  height: 206px;
+  width: 360px;
+  position: relative;
+}
+.titleInfo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 360px;
+  height: 132px;
+}
+.titleInfoMan{
+  background: url('../../assets/images/guide/pnl-nancesuo.png')
+    no-repeat;
+  background-size: 100% 100%;
+}
+.titleInfoMan::before{
+  content: '';
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background: url('../../assets/images/guide/icon-nance.png')
+    no-repeat;
+  background-size: 100% 100%;
+  top: 0px;
+  left: 50%;
+  margin-left: -60px;
+}
+.titleInfoNv{
+  background: url('../../assets/images/guide/pnl-nvcesuo.png')
+    no-repeat;
+  background-size: 100% 100%;
+}
+.titleInfoNv::before{
+  content: '';
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background: url('../../assets/images/guide/icon-nvce.png')
+    no-repeat;
+  background-size: 100% 100%;
+  top: 0px;
+  left: 50%;
+  margin-left: -60px;
+}
+.toiletInfoRight {
+  position: absolute;
+  top: 112px;
+  left: 62px;
+  width: 254px;
+  height: 182px;
+  background: url('../../assets/images/guide/pnl-shiyongliang.png') no-repeat;
+  background-size: 100% 100%;
+  background-position: 0 -38px;
+  line-height: 25px;
+  padding-right: 10px;
+}
+.toiletInfoRight p{
+  font-family: DSDIGI;
+  font-size: 80px;
+  color: #5ED6FF;
+  line-height: 104px;
+  text-align: center;
+  letter-spacing: 1;
+}
+.toiletInfoRight p span{
+  font-size: 40px;
+  color: #9EE0FF;
+  position: relative;
+  margin-left: -14px;
+}
+.oneBox {
+  position: relative;
+  height: 135px;
+  width: 360px;
+  margin-bottom: 26px;
+}
+.toiletInfoRightMan::before{
+  content: '空闲';
+  position: absolute;
+  left: -34px;
+  top: 68px;
+  font-family: MicrosoftYaHei;
+  font-size: 14px;
+  color: #9EE0FF;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+.toiletInfoRightMan::after{
+  content: '总数';
+  position: absolute;
+  right: -13px;
+  top: 68px;
+  font-family: MicrosoftYaHei;
+  font-size: 14px;
+  color: #9EE0FF;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+.boxTitle {
+  height: 35px;
+  width: 200px;
+  left: 0;
+  top: 0;
+  background: url('../../assets/images/guide/pnl-yiji01.png') no-repeat;
+  background-size: cover;
+  font-family: MicrosoftYaHei;
+  font-size: 18px;
+  color: #effeff;
+  letter-spacing: 0;
+  line-height: 36px;
+  text-indent: 30px;
+  margin-bottom: 14px;
+}
+.boxContent {
+  height: 72px;
+  position: relative;
+  padding-top: 16px;
+}
+.contentLeft {
+  position: absolute;
+  left: 0;
+  top: 18px;
+  height: 72px;
+  width: 72px;
+  height: 72px;
+  background: url('../../assets/images/guide/tubiao-card-keliuliang.png') no-repeat;
+  background-size: 100% 100%;
+}
+.contentRihgt {
+  margin-left: 78px;
+  margin-right: 20px;
+  height: 78px;
+  width: 283px;
+  /* display: grid;
+  grid-template-columns: 55% 45%; */
+  position: relative;
+  overflow: hidden;
+}
+.contentRihgt::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url('../../assets/images/guide/pnl-keliuliang.png') no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 34px;
+}
+.contentRihgt::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 39px;
+  background: url('../../assets/images/guide/pnl-keliuliang.png') no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 34px;
+}
+.part1 {
+  font-family: MicrosoftYaHei;
+  font-size: 14px;
+  color: #9ee0ff;
+  letter-spacing: 0;
+  float:left;
+  width: 45%;
+}
+.part1 p{
+    font-family: MicrosoftYaHei;
+    font-size: 14px;
+    color: #9ee0ff;
+    letter-spacing: 0;
+    line-height: 37px;
+    text-indent: 10px;
+}
+.part2 {
+  font-family: MicrosoftYaHei-Bold;
+  font-size: 20px;
+  color: #ffffff;
+  letter-spacing: 0;
+  float: left;
+  width: 55%;
+}
+.part2 p{
+  font-family: DSDIGI;
+  font-size: 32px;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: 32px;
+  text-indent: 10px;
+  font-weight: 550;
+  position: relative;
+  top: 2px;
+}
+.part2 p i{
+  font-style: normal;
+  font-size: 12px;
+  color: #46a0dc;
+  margin-left: 3px;
+  position: relative;
+  top: -4px;
+}
+.oneCol {
+  width: 50%;
+  float: left;
+  height: 57px;
+  position: relative;
+  margin-bottom: 14px;
+  overflow: hidden;
+}
+.colLeft {
+  width: 57px;
+  height: 57px;
+  position: absolute;
+  left: 0;
+}
+.colImg1 {
+  background: url('../../assets/images/guide/tubiao-card-wendu.png') no-repeat;
+  background-size: 100% 100%;
+}
+.colImg2 {
+  background: url('../../assets/images/guide/tubiao-card-shidu.png') no-repeat;
+  background-size: 100% 100%;
+}
+.colImg3 {
+  background: url('../../assets/images/guide/tubiao-card-nh3.png') no-repeat;
+  background-size: 100% 100%;
+}
+.colImg4 {
+  background: url('../../assets/images/guide/tubiao-card-sh.png') no-repeat;
+  background-size: 100% 100%;
+}
+.colImg5 {
+  background: url('../../assets/images/guide/tubiao-card-pm25.png') no-repeat;
+  background-size: 100% 100%;
+}
+.colRight {
+  margin-left: 62px;
+}
+.colRight-p {
+  font-family: MicrosoftYaHei-Bold;
+  font-size: 20px;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+.colRight-p span{
+  font-family: MicrosoftYaHei;
+  font-size: 12px;
+  color: #9ee0ff;
+  letter-spacing: 0;
+}
+.colRight-name {
+  font-family: MicrosoftYaHei;
+  font-size: 14px;
+  color: #9ee0ff;
+  letter-spacing: 0;
+}
+.malePart1080 .toiletInfo{
+  margin-bottom: 20px;
+}
+.malePart1080 .oneBox{
+  margin-bottom: 46px;
+}
+@keyframes turn1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes turn2 {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.malePart1080 .toiletInfo{
+  margin-bottom: 20px;
+}
+.malePart1080 .oneBox {
+  margin-bottom: 34px;
+}
+.malePart900 {
+  width: 277px;
+}
+.malePartCenter900{
+  top: 106px;
+}
+.footerpart900{
+  bottom: 38px;
+}
+.videoArea{
+  width: 413px;
+  height: 258px;
+  margin-top: 170px;
+  background: url('../../assets/images/guide/pnl-video.png') no-repeat;
+  background-size: 100% 100%;
+  padding: 4px;
+  position: relative;
+  top: -29px;
+  left: 0px;
+}
+
+#audio {
+  width: 100%;
+  height: 100%;
+}
+.VideoImg{
+  width: 100%;
+  height: 100%;
+}
+.VideoImg img{
+  width: 100%;
+  height: 100%;
+}
+.femalePart {
+  height: 100%;
+  width: 100%;
+  padding: 47px 0 0 140px;
+}
+.femalePart .toiletInfo {
+  height: 206px;
+  width: 360px;
+  position: relative;
+}
+.femalePart .titleInfo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 360px;
+  height: 132px;
+}
+.titleInfowoman{
+  background: url('../../assets/images/guide/pnl-nvcesuo.png')
+    no-repeat;
+  background-size: 100% 100%;
+}
+.titleInfowoman::before{
+  content: '';
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background: url('../../assets/images/guide/icon-nvce.png')
+    no-repeat;
+  background-size: 100% 100%;
+  top: 0px;
+  left: 50%;
+  margin-left: -60px;
+}
+.titleInfoman{
+  background: url('../../assets/images/guide/pnl-nancesuo.png')
+    no-repeat;
+  background-size: 100% 100%;
+}
+.titleInfoman::before{
+  content: '';
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background: url('../../assets/images/guide/icon-nance.png')
+    no-repeat;
+  background-size: 100% 100%;
+  top: 0px;
+  left: 50%;
+  margin-left: -60px;
+}
+.femalePart .toiletInfoRight {
+  position: absolute;
+  top: 112px;
+  left: 62px;
+  width: 254px;
+  height: 182px;
+  background: url('../../assets/images/guide/pnl-shiyongliang.png') no-repeat;
+  background-size: 100% 100%;
+  background-position: 0 -38px;
+  line-height: 25px;
+  padding-right: 10px;
+}
+.femalePart .toiletInfoRight p {
+  font-family: DSDIGI;
+  font-size: 80px;
+  color: #FE60A3;
+  line-height: 104px;
+  text-align: center;
+  letter-spacing: 1;
+}
+.femalePart .toiletInfoRight p span{
+  font-size: 40px;
+  color: #9EE0FF;
+  position: relative;
+  margin-left: -14px;
+}
+.femalePart .toiletInfoRight::before{
+  content: '空闲';
+  position: absolute;
+  left: -34px;
+  top: 68px;
+  font-family: MicrosoftYaHei;
+  font-size: 14px;
+  color: #9EE0FF;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+.femalePart .toiletInfoRight::after{
+  content: '总数';
+  position: absolute;
+  right: -13px;
+  top: 68px;
+  font-family: MicrosoftYaHei;
+  font-size: 14px;
+  color: #9EE0FF;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+.femalePart .oneBox {
+  position: relative;
+  height: 135px;
+  width: 360px;
+  margin-bottom: 26px;
+}
+.femalePart .boxTitle {
+  height: 35px;
+  width: 200px;
+  position: relative;
+  left: 160px;
+  top: 0;
+  background: url('../../assets/images/guide/pnl-yiji02.png') no-repeat;
+  background-size: 100% 100%;
+  font-family: MicrosoftYaHei;
+  font-size: 18px;
+  color: #effeff;
+  letter-spacing: 0;
+  line-height: 35px;
+  padding-right: 36px;
+  text-align: right;
+  margin-bottom: 14px;
+}
+.femalePart .boxContent {
+  height: 72px;
+  position: relative;
+  padding-top: 16px;
+}
+.femalePart .contentLeft {
+  position: absolute;
+  left: 0;
+  top: 18;
+  height: 72px;
+  width: 72px;
+  height: 72px;
+  background: url('../../assets/images/guide/tubiao-card-keliuliang.png') no-repeat;
+  background-size: 100% 100%;
+}
+.femalePart .contentRihgt {
+  margin-left: 78px;
+  margin-right: 20px;
+  height: 72px;
+  width: 283px;
+  position: relative;
+  overflow: hidden;
+}
+.femalePart .contentRihgt::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url('../../assets/images/guide/pnl-keliuliang.png') no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 34px;
+}
+.femalePart .contentRihgt::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 39px;
+  background: url('../../assets/images/guide/pnl-keliuliang.png') no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 34px;
+}
+.femalePart .contentRihgt .part1 {
+  font-family: MicrosoftYaHei;
+  font-size: 14px;
+  color: #9ee0ff;
+  letter-spacing: 0;
+  float:left;
+  width: 45%;
+}
+.femalePart .contentRihgt .part1 p {
+  font-family: MicrosoftYaHei;
+  font-size: 14px;
+  color: #9ee0ff;
+  letter-spacing: 0;
+  line-height: 37px;
+  text-indent: 10px;
+}
+.femalePart .contentRihgt .part2 {
+  font-family: MicrosoftYaHei-Bold;
+  font-size: 20px;
+  color: #ffffff;
+  letter-spacing: 0;
+  float: left;
+  width: 55%;
+}
+.femalePart .contentRihgt .part2 p {
+  font-family: DSDIGI;
+  font-size: 32px;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: 32px;
+  text-indent: 10px;
+  font-weight: 550;
+  position: relative;
+  top: 2px;
+}
+.femalePart .contentRihgt .part2 p i {
+  font-style: normal;
+  font-size: 12px;
+  color: #46a0dc;
+  margin-left: 3px;
+  position: relative;
+  top: -4px;
+}
+.femalePart .oneCol {
+  width: 50%;
+  display: inline-block;
+  height: 57px;
+  position: relative;
+  margin-bottom: 14px;
+  overflow: hidden;
+}
+.colLeft {
+  width: 57px;
+  height: 57px;
+  position: absolute;
+  left: 0;
+}
+.colImg1 {
+  background: url('../../assets/images/guide/tubiao-card-wendu.png') no-repeat;
+  background-size: 100% 100%;
+}
+.colImg2 {
+  background: url('../../assets/images/guide/tubiao-card-shidu.png') no-repeat;
+  background-size: 100% 100%;
+}
+.colImg3 {
+  background: url('../../assets/images/guide/tubiao-card-nh3.png') no-repeat;
+  background-size: 100% 100%;
+}
+.colImg4 {
+  background: url('../../assets/images/guide/tubiao-card-sh.png') no-repeat;
+  background-size: 100% 100%;
+}
+.colImg5 {
+  background: url('../../assets/images/guide/tubiao-card-pm25.png') no-repeat;
+  background-size: 100% 100%;
+}
+.colRight {
+  margin-left: 62px;
+}
+.colRight-p {
+  font-family: MicrosoftYaHei-Bold;
+  font-size: 20px;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: 24px;
+
+}
+.colRight-p span {
+  font-family: MicrosoftYaHei;
+  font-size: 12px;
+  color: #9ee0ff;
+  letter-spacing: 0;
+}
+.colRight-name {
+  font-family: MicrosoftYaHei;
+  font-size: 14px;
+  color: #9ee0ff;
+  letter-spacing: 0;
+}
+@keyframes turn1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes turn2 {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.malePart1080 .toiletInfo {
+  margin-bottom: 54px;
+}
+.malePart1080 .oneBox {
+  margin-bottom: 46px;
+}
+.oneBoxSpecial{
+  position: absolute;
+  top: -661px;
+  left: 50%;
+  margin-left: -260px;
+  width: 520px;
+  height: 16px;
+  background: url('../../assets/images/guide/pnl-zongshu.png') no-repeat;
+  background-size: 100% 100%;
+}
+.specialOneLine{
+  width: 260px;
+  height: 38px;
+  margin-right: 0px;
+  float: left;
+  position: relative;
+  top: -17px;
+}
+.specialOneLine p{
+  font-family: MicrosoftYaHei;
+  font-size: 14px;
+  color: #9ee0ff;
+  letter-spacing: 0;
+  line-height: 38px;
+  text-indent: 10px;
+}
+.specialOneLine .p1{
+  float:left;
+  width: 40%;
+}
+.specialOneLine .p2{
+  float: left;
+  width: 60%;
+  font-family: DSDIGI;
+  font-size: 36px;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: 28px;
+}
+.specialOneLine p i{
+  font-style: normal;
+  font-size: 12px;
+  color: #46a0dc;
+}
+.thirdPart .oneBoxSpecial > .titleInfo{
+  position: absolute;
+  left: 0;
+  top: -46px;
+  line-height: 32px;
+  height: 32px;
+  width: 186px;
+  background: url('../../assets/images/guide/pnl-xiaobiaoti.png') no-repeat;
+  background-size: 100% 100%;
+  font-family: PingFangSC-Semibold;
+  font-size: 16px;
+  color: #effeff;
+  letter-spacing: 0;
+  text-indent: 35px;
+} 
+@font-face{
+  font-family: 'DSDIGI';
+  src: url('DS-DIGI-1.ttf') format('truetype');
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+.evaluateArea{
+  width: 360px;
+  height: 175px;
+  margin-top: 140px;
+  position: relative;
+}
+.evaLeft{
+  height: 172px;
+  width: 194px;
+  background: url('../../assets/images/guide/pnl-zonghepingfen.png') no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 18px 22px;
+}
+.evaTitle{
+  font-family: PingFangSC-Semibold;
+  font-size: 16px;
+  color: #EFFEFF;
+  letter-spacing: 0;
+  font-weight: 600;
+  position: relative;
+  padding-left: 35px;
+  line-height: 30px;
+}
+.evaTitle::before{
+  content: '';
+  width: 32px;
+  height: 32px;
+  background: url('../../assets/images/guide/ico-zonghepingfen.png') no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.starBar{
+  overflow: hidden;
+  margin-top: 22px;
+}
+.evaLeft .star{
+  width: 26px;
+  height: 26px;
+  background: url('../../assets/images/guide/ico-starback.png') no-repeat;
+  background-size: 100% 100%;
+  float: left;
+  margin-left: 3px;
+}
+.evaLeft .starLight{
+  background: url('../../assets/images/guide/ico-star.png') no-repeat;
+  background-size: 100% 100%;
+}
+.evaLeft .starHarf{
+  background: url('../../assets/images/guide/ico-starharlf.png') no-repeat;
+  background-size: 100% 100%;
+}
+.evaValue{
+  margin-top: 20px;
+  font-family: MicrosoftYaHei;
+  font-size: 14px;
+  color: #9EE0FF;
+  letter-spacing: 0;
+  text-align: center;
+  font-weight: 400;
+}
+.evaRight{
+  height: 172px;
+  width: 142px;
+  background: url('../../assets/images/guide/pnl-qrcode.png') no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+#qrCodeArea{
+  width: 132px;
+  height: 133px;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+}
+.evaRight p{
+  font-family: MicrosoftYaHei;
+  font-size: 14px;
+  color: #9EE0FF;
+  letter-spacing: 0;
+  text-align: center;
+  font-weight: 400;
+  width: 100%;
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+}
+.thirdPart {
+  width: 1700px;
+  height: 130px;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  margin-left: -850px;
+  /* display: grid;
+  grid-template-columns: 19% 62% 19%; */
+  /* overflow: hidden; */
+  z-index: 200;
+
+}
+.thirdPart .leftPart {
+  position: relative;
+  float: left;
+  width: 20%;
+  overflow: hidden;
+  height: 100%;
+}
+.thirdPart .centerpart {
+  position: relative;
+  float: left;
+  width: 60%;
+  /* overflow: hidden; */
+  height: 100%;
+}
+.thirdPart .rightpart {
+  position: relative;
+  float: left;
+  width: 20%;
+  overflow: hidden;
+  height: 100%;
+}
+
+.thirdPart .toiletBoss {
+  height: 130px;
+  width: 282px;
+  position: absolute;
+  left: 0px;
+  top: 0;
+}
+.thirdPart .titleInfo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  line-height: 32px;
+  height: 32px;
+  width: 186px;
+  background: url('../../assets/images/guide/pnl-xiaobiaoti.png') no-repeat;
+  background-size: 100% 100%;
+  font-family: PingFangSC-Semibold;
+  font-size: 16px;
+  color: #effeff;
+  letter-spacing: 0;
+  text-indent: 35px;
+}
+.thirdPart .bossBottom1 {
+  height: 84px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: url('../../assets/images/guide/card-huanweimoren.png')
+    no-repeat;
+  background-size: 100%;
+}
+.thirdPart .bossBottom1 .bossLeft {
+  height: 100%;
+  width: 84px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.thirdPart .bossBottom1 .bossRight {
+  margin-left: 84px;
+  padding-left: 10px;
+}
+.thirdPart .bossBottom1 .bossRight p {
+  font-size: 14px;
+  color: #9ee0ff;
+  letter-spacing: 0;
+  line-height: 26px;
+}
+.thirdPart .bossBottom1 .bossRight p span {
+  font-size: 14px;
+  color: #4fb1c8;
+  letter-spacing: 0;
+}
+.thirdPart .bossBottom1 .bossRight div {
+  font-family: MicrosoftYaHei;
+  font-size: 14px;
+  color: #9ee0ff;
+  letter-spacing: 0;
+  word-break: break-all;
+  padding-top: 12px;
+}
+.thirdPart .toiletBosscenter {
+  height: 164px;
+  width: 904px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  margin-left: -452px;
+}
+.thirdPart .titleInfo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  line-height: 32px;
+  height: 32px;
+  width: 186px;
+  background: url('../../assets/images/guide/pnl-xiaobiaoti.png') no-repeat;
+  background-size: 100% 100%;
+  font-family: PingFangSC-Semibold;
+  font-size: 16px;
+  color: #effeff;
+  letter-spacing: 0;
+  text-indent: 35px;
+}
+.thirdPart .bossBottom {
+  height: 104px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: url('../../assets/images/guide/pnl-disanwei.png') no-repeat;
+  background-size: 100% 100%;
+  overflow: hidden;
+  padding-top: 20.5px;
+}
+.thirdPart .oneCol {
+  width: 100%;
+  height: 57px;
+  position: relative;
+  margin-bottom: 14px;
+  overflow: hidden;
+  float: left;
+  width: 20%;
+  padding-left: 30px;
+}
+.thirdPart .colLeft {
+  width: 57px;
+  height: 57px;
+  position: absolute;
+  left: 22px;
+}
+.thirdPart .colImg1 {
+  background: url('../../assets/images/guide/tubiao-card-wendu.png')
+    no-repeat;
+  background-size: 100% 100%;
+}
+.thirdPart .colImg2 {
+  background: url('../../assets/images/guide/tubiao-card-shidu.png')
+    no-repeat;
+  background-size: 100% 100%;
+}
+.thirdPart .colImg3 {
+  background: url('../../assets/images/guide/tubiao-card-nh3.png')
+    no-repeat;
+  background-size: 100% 100%;
+}
+.thirdPart .colImg4 {
+  background: url('../../assets/images/guide/tubiao-card-sh.png')
+    no-repeat;
+  background-size: 100% 100%;
+}
+.thirdPart .colImg5 {
+  background: url('../../assets/images/guide/tubiao-card-pm25.png')
+    no-repeat;
+  background-size: 100% 100%;
+}
+.thirdPart .colRight {
+  margin-left: 50px;
+}
+.thirdPart .colRight .colRight-p {
+  font-family: MicrosoftYaHei-Bold;
+  font-size: 20px;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+.thirdPart .colRight .colRight-p span {
+  font-family: MicrosoftYaHei;
+  font-size: 12px;
+  color: #9ee0ff;
+  letter-spacing: 0;
+}
+.thirdPart .colRight .colRight-name {
+  font-family: MicrosoftYaHei;
+  font-size: 14px;
+  color: #9ee0ff;
+  letter-spacing: 0;
+}
+.footerpart1080 {
+  bottom: 150px;
+}
+.guideBackGround {
+  height: 496px;
+  width: 856px;
+  position: absolute;
+  top: 250px;
+  left: 50%;
+  margin-left: -428px;
+  overflow: hidden;
+}
+.imgback {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 99;
+}
+.backInfo{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+/* rgba(0, 255, 137, 0.24)
+rgba(226, 121, 13,0.24) */
+.maleMarker {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  background: linear-gradient(to bottom, rgba(228, 93, 255, 0.61), rgba(241,222,252, 0.61))
+}
+.maleMarkerActive {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  background-color: rgba(0, 102, 255, 0.24);
+  background: linear-gradient(to bottom, rgba(40, 56, 159, 0.61), rgba(114, 145, 212, 0.61))
+}
+.femaleMarker {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  background: linear-gradient(to bottom, rgba(228, 93, 255, 0.61), rgba(241,222,252, 0.61))
+}
+.femaleMarkerActive {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  background: linear-gradient(to bottom, rgba(40, 56, 159, 0.61), rgba(114, 145, 212, 0.61))
+}
+.thirdMarker {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  background: linear-gradient(to bottom, rgba(228, 93, 255, 0.61), rgba(241,222,252, 0.61))
+}
+.thirdMarkerActive {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  background: linear-gradient(to bottom, rgba(40, 56, 159, 0.61), rgba(114, 145, 212, 0.61))
+}
+.weatherPart{
+  position: absolute;
+  right: 0px;
+  top: 10px;
+  z-index: 301;
+  width: 305px;
+  height: 23px;
+  font-family: MicrosoftYaHeiUI;
+  font-size: 18px;
+  color: #9EE0FF;
+  letter-spacing: 0;
+  line-height: 20px;
+  font-weight: bold;
+}
+.weather1{
+  float: left;
+  width: 33px;
+  height: 33px;
+  background: url('../../assets/images/guide/weather.png') no-repeat;
+  background-size: 100% 100%;
+  margin-right: 15px;
+  position: relative;
+  top: -6px;
+}
+.weather2{
+  float: left;
+  margin-right: 15px;
+}
+.weather3{
+  float: left;
+}

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta http-equiv="Expires" content="0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Cache-control" content="no-cache">
+  <meta http-equiv="Cache" content="no-cache">
+  <title>智慧公厕</title>
+  <link rel="stylesheet" href="./css/databoard.css" type="text/css" />
+  <link rel="stylesheet" href="./css/leftData.css" type="text/css" />
+  <link rel="stylesheet" href="./css/rightData.css" type="text/css" />
+  <link rel="stylesheet" href="./css/footerPart.css" type="text/css" />
+  <link rel="stylesheet" href="./css/centerPart.css" type="text/css" />
+</head>
+<body style="width: 1920px; height: 1080px; overflow:hidden;">
+  <!-- 应用范围 -->
+  <div class="GuidePage">
+    <!-- 头部 -->
+    <div class="headerPart">
+      智慧公厕
+    </div>
+    <div class="tipstop">
+      <div class="tipstop1">空闲</div>
+      <div class="tipstop2">在用</div>
+    </div>
+    <!-- 时间显示，定时器一秒一更新 -->
+    <div class="timePart">2022/06/15 星期五 10:13:26</div>
+    <!-- 天气显示，定时器12小时一刷 -->
+    <div class="weatherPart">
+      <div class="weather1 weatherdefault"></div>
+      <div class="weather2">晴天</div>
+      <div class="weather3"> 20℃~32℃ 当前22℃</div>
+    </div>
+    <!-- 中间厕位区域 -->
+    <div class="guideBackGround">
+      <img class="imgback" src="">
+      <div class="backInfo"></div>
+    </div>
+    </div>
+    <!-- 左边区域 -->
+    <div class="leftPanel malePart1080">
+      <div class="malePart">
+        <div class="toiletInfo">
+          <div class="titleInfo titleInfoMan"></div>
+          <div class="toiletInfoRight toiletInfoRightMan">
+            <p class="tlp tlp1">
+              0
+              <span >/0</span>
+            </p>
+          </div>
+        </div>
+        <div class="oneBox">
+          <div class="boxTitle">
+            客流数据
+          </div>
+          <div class="boxContent">
+            <div class="contentLeft"></div>
+            <div class="contentRihgt">
+              <div class="part1">
+                <p>今日客流</p>
+                <p>本月客流</p>
+              </div>
+              <div class="part2 part21">
+                <p>
+                  0
+                  <i>次</i>
+                </p>
+                <p>
+                  0
+                  <i>次</i>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 环境监测信息 -->
+        <div class="oneBox">
+          <div class="boxTitle">
+            环境监测数据
+          </div>
+          <div class="boxContent">
+            <div class="oneCol">
+              <div class="colLeft colImg1"></div>
+              <div class="colRight">
+                <p class="colRight-p colp11">
+                  0
+                  <span>℃</span>
+                </p>
+                <p class="colRight-name">温度</p>
+              </div>
+            </div>
+            <div class="oneCol">
+              <div class="colLeft colImg2"></div>
+              <div class="colRight">
+                <p class="colRight-p colp21">
+                  0
+                  <span>%</span>
+                </p>
+                <p class="colRight-name">湿度</p>
+              </div>
+            </div>
+            <div class="oneCol">
+              <div class="colLeft colImg3"></div>
+              <div class="colRight">
+                <p class="colRight-p colp31">
+                  0
+                  <span>ppm</span>
+                </p>
+                <p class="colRight-name">氨气</p>
+              </div>
+            </div>
+            <div class="oneCol">
+              <div class="colLeft colImg4"></div>
+              <div class="colRight">
+                <p class="colRight-p colp41">
+                  0
+                  <span>ppm</span>
+                </p>
+                <p class="colRight-name">硫化氢</p>
+              </div>
+            </div>
+            <div class="oneCol">
+              <div class="colLeft colImg5"></div>
+              <div class="colRight">
+                <p class="colRight-p colp51">
+                  0
+                  <span>ug/m³</span>
+                </p>
+                <p class="colRight-name">PM2.5</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 左下视频播放区域 -->
+        <div class="videoArea">
+          <div class="VideoImg" style="display: none;">
+            <img src="">
+          </div>
+          <video id="audio" class="video-player" style="object-fit:fill; display: block;"  autoplay muted>
+            <source id="videoInner" src="" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+    <!-- 右侧区域 -->
+    <div class="rightPanel malePart1080">
+      <div class="femalePart">
+        <div class="toiletInfo">
+          <div class="titleInfo titleInfowoman"></div>
+          <div class="toiletInfoLeft toiletInfoLeftWoman"></div>
+          <div class="toiletInfoRight">
+            <p class="tlp tlp2">
+              0
+              <span>/0</span>
+            </p>
+          </div>
+        </div>
+        <div class="oneBox">
+          <div class="boxTitle">
+            客流数据
+          </div>
+          <div class="boxContent">
+            <div class="contentLeft"></div>
+            <div class="contentRihgt">
+              <div class="part1">
+                <p>今日客流</p>
+                <p>本月客流</p>
+              </div>
+              <div class="part2 part22">
+                <p>
+                  0
+                  <i>次</i>
+                </p>
+                <p>
+                  0
+                  <i>次</i>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 环境监测信息 -->
+        <div class="oneBox">
+          <div class="boxTitle">
+            环境监测数据
+          </div>
+          <div class="boxContent">
+            <div class="oneCol">
+              <div class="colLeft colImg1"></div>
+              <div class="colRight">
+                <p class="colRight-p colp12">
+                  0
+                  <span>℃</span>
+                </p>
+                <p class="colRight-name">温度</p>
+              </div>
+            </div>
+            <div class="oneCol">
+              <div class="colLeft colImg2"></div>
+              <div class="colRight">
+                <p class="colRight-p colp22">
+                  0
+                  <span>%</span>
+                </p>
+                <p class="colRight-name">湿度</p>
+              </div>
+            </div>
+            <div class="oneCol">
+              <div class="colLeft colImg3"></div>
+              <div class="colRight">
+                <p class="colRight-p colp32">
+                  0
+                  <span>ppm</span>
+                </p>
+                <p class="colRight-name">氨气</p>
+              </div>
+            </div>
+            <div class="oneCol">
+              <div class="colLeft colImg4"></div>
+              <div class="colRight">
+                <p class="colRight-p colp42">
+                  0
+                  <span>ppm</span>
+                </p>
+                <p class="colRight-name">硫化氢</p>
+              </div>
+            </div>
+            <div class="oneCol">
+              <div class="colLeft colImg5"></div>
+              <div class="colRight">
+                <p class="colRight-p colp52">
+                  0
+                  <span>ug/m³</span>
+                </p>
+                <p class="colRight-name">PM2.5</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 增加评分区域 -->
+        <div class="evaluateArea">
+          <div class="evaLeft">
+            <div class="evaTitle">综合评分</div>
+            <div class="starBar">
+              <div class="star starLight"></div>
+              <div class="star starLight"></div>
+              <div class="star starLight"></div>
+              <div class="star starLight"></div>
+              <div class="star starLight"></div>
+            </div>
+            <p class="evaValue">0分</p>
+          </div>
+          <div class="evaRight">
+            <div id="qrCodeArea"></div>
+            <p>码上评价</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 第三厕信息 -->
+    <div class="thirdPart footerpart1080">
+      <div class="leftPart">
+      </div>
+      <div class="centerpart">
+        <div class="oneBoxSpecial">
+          <div class="specialOneLine"><p class="p1">今日客流总数</p><p class="p2 allp1">
+            0
+          </p></div>
+          <div class="specialOneLine"><p class="p1">本月客流总数</p><p class="p2 allp2">
+            0
+          </p></div>
+        </div>
+        <div class="toiletBosscenter">
+          <div class="titleInfo">第三卫环境监测信息</div>
+          <div class="bossBottom">
+            <div class="oneCol">
+              <div class="colLeft colImg1"></div>
+              <div class="colRight">
+                <p class="colRight-p colp13">
+                  0
+                  <span>℃</span>
+                </p>
+                <p class="colRight-name">温度</p>
+              </div>
+            </div>
+            <div class="oneCol">
+              <div class="colLeft colImg2"></div>
+              <div class="colRight">
+                <p class="colRight-p colp23">
+                  0
+                  <span>%</span>
+                </p>
+                <p class="colRight-name">湿度</p>
+              </div>
+            </div>
+            <div class="oneCol">
+              <div class="colLeft colImg3"></div>
+              <div class="colRight">
+                <p class="colRight-p colp33">
+                  0
+                  <span>ppm</span>
+                </p>
+                <p class="colRight-name">氨气</p>
+              </div>
+            </div>
+            <div class="oneCol">
+              <div class="colLeft colImg4"></div>
+              <div class="colRight">
+                <p class="colRight-p colp43">
+                  0
+                  <span>ppm</span>
+                </p>
+                <p class="colRight-name">硫化氢</p>
+              </div>
+            </div>
+            <div class="oneCol">
+              <div class="colLeft colImg5"></div>
+              <div class="colRight">
+                <p class="colRight-p colp53">
+                  0
+                  <span>ug/m³</span>
+                </p>
+                <p class="colRight-name">PM2.5</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rightpart">
+      </div>
+    </div>
+    <!-- 底部 -->
+    <div class="footerpart">
+      <marquee class="footerP" behavior="scroll">文明如厕，请爱护公共卫生</marquee>
+    </div>
+  </div>
+  <!-- qrcode -->
+  <script type="text/javascript" src="./js/qrcode.min.js"></script>
+  <script language="JavaScript" src="./js/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="./js/index.js"></script>
+</body>
+</html>
